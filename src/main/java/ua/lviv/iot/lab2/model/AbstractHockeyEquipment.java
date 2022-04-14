@@ -15,6 +15,7 @@ public  abstract class AbstractHockeyEquipment {
 
     }
 
+
     public String getName() {
         return name;
     }
