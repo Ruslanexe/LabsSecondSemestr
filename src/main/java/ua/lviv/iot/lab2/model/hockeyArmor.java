@@ -1,8 +1,7 @@
 package ua.lviv.iot.lab2.model;
 
-public class hockeyArmor extends AbstractHockeyEquipment {
-    public hockeyArmor(String name, double price, int size, typeOfHockeyEquipment typeOfHockeyEquipment) {
+public  class HockeyArmor extends AbstractHockeyEquipment {
+    public HockeyArmor(String name, double price, int size, TypeOfHockeyEquipment typeOfHockeyEquipment) {
         super(name, price, size, typeOfHockeyEquipment);
     }
-
 }

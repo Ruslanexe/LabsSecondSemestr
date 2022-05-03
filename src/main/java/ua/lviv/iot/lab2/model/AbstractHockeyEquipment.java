@@ -1,13 +1,13 @@
 package ua.lviv.iot.lab2.model;
-import ua.lviv.iot.lab2.model.typeOfHockeyEquipment;
 
-public  abstract class AbstractHockeyEquipment {
+public abstract class AbstractHockeyEquipment {
     protected String name;
     protected double price;
     protected int size;
-    protected typeOfHockeyEquipment typeOfHockeyEquipment;
+    protected TypeOfHockeyEquipment typeOfHockeyEquipment;
 
-    public AbstractHockeyEquipment(String name, double price, int size, typeOfHockeyEquipment typeOfHockeyEquipment) {
+    public AbstractHockeyEquipment(String name, double price, int size,
+                                   TypeOfHockeyEquipment typeOfHockeyEquipment) {
         this.name = name;
         this.price = price;
         this.size = size;
@@ -40,11 +40,20 @@ public  abstract class AbstractHockeyEquipment {
         this.size = size;
     }
 
-    public typeOfHockeyEquipment getTypeOfHockeyEquipment() {
+    public TypeOfHockeyEquipment getTypeOfHockeyEquipment() {
         return typeOfHockeyEquipment;
     }
 
-    public void setTypeOfHockeyEquipment(typeOfHockeyEquipment typeOfHockeyEquipment) {
+    public void setTypeOfHockeyEquipment(TypeOfHockeyEquipment
+                                                 typeOfHockeyEquipment) {
         this.typeOfHockeyEquipment = typeOfHockeyEquipment;
+    }
+
+    public String getHeaders() {
+        return "name, price, size, typeOfHockeyEquipment";
+    }
+
+    public String toCSV() {
+        return name + "," + price + "," + size + "," + typeOfHockeyEquipment;
     }
 }
