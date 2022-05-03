@@ -9,6 +9,7 @@ public class hockeyClubManager{
     public hockeyClubManager(List<AbstractHockeyEquipment> list) {
         this.list = list;
     }
+
     public List<AbstractHockeyEquipment>SortedByGrowth(){
         List<AbstractHockeyEquipment> sortedList = this.list;
         sortedList.sort((o1,o2) -> Double.compare(o1.getPrice(),o2.getPrice()));

@@ -1,7 +1,5 @@
 package ua.lviv.iot.lab2.model;
 
-
-
 public class hockeyStick extends AbstractHockeyEquipment {
     private String colour;
 
