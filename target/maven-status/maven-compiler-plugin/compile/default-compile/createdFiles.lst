@@ -1,0 +1,6 @@
+ua\lviv\iot\lab2\model\hockeyStick.class
+ua\lviv\iot\lab2\model\typeOfHockeyEquipment.class
+ua\lviv\iot\lab2\model\AbstractHockeyEquipment.class
+ua\lviv\iot\lab2\model\hockeyArmor.class
+ua\lviv\iot\lab2\writer\writer.class
+ua\lviv\iot\lab2\manager\hockeyClubManager.class
